@@ -1,0 +1,16 @@
+<!-- templates/view_study.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Study</title>
+</head>
+<body>
+    <h2>Study Details</h2>
+    <p><strong>study Name:</strong> {{ studies.study_name }}</p>
+    <p><strong>study Phase:</strong> {{ studies.study_phase }}</p>
+    <p><strong>Sponsor name:</strong> {{ studies.sponsor_name }}</p>
+    <p><strong>study Description:</strong> {{ studies.study_description }}</p>
+    <a href="{% url 'main' %}">Back</a>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!-- templates/edit_study.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Study</title>
+</head>
+<body>
+    <h2>Edit Study</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update</button>
+        <a href="{% url 'main' %}">Cancel</a>
+    </form>
+</body>
+</html>

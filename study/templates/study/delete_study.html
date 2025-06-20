@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Study</title>
+</head>
+<body>
+    <h1>Delete Confirmation</h1>
+    <p>Are you sure you want to delete the study: <strong>{{ study.study_name }}</strong>?</p>
+    
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Yes, Delete</button>
+        <a href="{% url 'main' %}">Cancel</a>
+    </form>
+</body>
+</html>
